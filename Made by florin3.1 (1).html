@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My BK Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fbe9d8;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+        }
+        .social {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social img {
+            width: 32px;
+            margin: 0 5px;
+        }
+        .connect img {
+            width: 200px; /* Tamaño ajustado */
+            margin: 20px 0; /* Espaciado */
+        }
+        strong {
+            font-size: 16px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .powered-by {
+            margin-top: 30px;
+            font-size: 12px;
+            text-align: center;
+            color: #888;
+        }
+        .powered-by a {
+            color: #888;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        // Función para generar el código de validación
+        function generarCodigo() {
+            const letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            const numeros = "0123456789";
+
+            const letra1 = letras[Math.floor(Math.random() * letras.length)];
+            const letra2 = letras[Math.floor(Math.random() * letras.length)];
+            const num1 = numeros[Math.floor(Math.random() * numeros.length)];
+            const num2 = numeros[Math.floor(Math.random() * numeros.length)];
+            const num3 = numeros[Math.floor(Math.random() * numeros.length)];
+            const num4 = numeros[Math.floor(Math.random() * numeros.length)];
+            const num5 = numeros[Math.floor(Math.random() * numeros.length)];
+
+            let codigo;
+            if (Math.random() < 0.5) {
+                codigo = `${letra1}${letra2}${num1}${num2}${num3}${num4}${num5}`;
+            } else {
+                codigo = `${letra1}${num1}${num2}${num3}${num4}${num5}${letra2}`;
+            }
+
+            document.getElementById("codigo-validacion").innerText = codigo;
+        }
+
+        // Función para comprobar si la página se está recargando
+        window.onload = function() {
+            // Verifica si la página ha sido recargada (por ejemplo, F5)
+            if (performance.navigation.type === 1) {
+                // Redirige a la página deseada si es recarga
+                window.location.href = "https://www.miexperienciabkespana.com/";
+            } else {
+                // Si la página no se está recargando, genera el código
+                generarCodigo();
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://rbixm.qualtrics.com/CP/Graphic.php?IM=IM_6G38bpoNPOtygtg" alt="Burger King Logo" class="logo">
+        <p>Gracias por completar la encuesta. A BURGER KING® le gustaría invitarte a volver y visitar nuestros restaurantes. No olvides presentar la oferta que aparece en el ticket de caja en tu próxima visita. Debes escribir el siguiente código en el ticket de caja.</p>
+        <p><strong>Código de validación: <span id="codigo-validacion"></span></strong></p>
+        <p>Muchas gracias por su participación.</p>
+        <div class="connect">
+            <a href="https://www.burgerking.es/home">
+                <img src="https://rbixm.qualtrics.com/CP/Graphic.php?IM=IM_0uYJwlr7Kd9DeOa" alt="Connect to Burger King">
+            </a>
+        </div>
+        <div class="social">
+            <p>Mantente conectado</p>
+            <a href="https://www.facebook.com/burgerking"><img src="https://rbixm.qualtrics.com/CP/Graphic.php?IM=IM_4Nkcalb6Nu1RXOC" alt="Facebook"></a>
+            <a href="https://twitter.com/burgerking"><img src="https://rbixm.qualtrics.com/CP/Graphic.php?IM=IM_3mcDJaoAypJYSZE" alt="Twitter"></a>
+        </div>
+    </div>
+    <div class="powered-by">
+        <p>Powered by <a href="https://www.qualtrics.com/powered-by-qualtrics/?utm_source=internal%2Binitiatives&utm_medium=survey%2Bpowered%2Bby%2Bqualtrics&utm_content=rbixm&utm_survey_id=SV_9MHgHFvPm0OEHr0" target="_blank">Qualtrics</a></p>
+    </div>
+</body>
+</html>
+
