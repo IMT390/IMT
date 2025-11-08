@@ -1,3 +1,5 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="" tvg-name="ACE Bei" tvg-logo="" group-title="ACE Stream",ACE Bei
 http://127.0.0.1:6878/ace/getstream?id=678a1e93fbfbd499c329886bfdda780e73ac1786&hlc=1&transcode_audio=0&transcode_mp3=0&transcode_ac3=0&preferred_audio_language=eng
+#EXTINF:-1 tvg-id="" tvg-name="Canal Personalizado" tvg-logo="" group-title="Mis Canales",Canal Personalizado
+http://tu-servidor/getstream?id=678a1e93fbfbd499c329886bfdda780e73ac1786&hlc=1&transcode_audio=0&transcode_mp3=0&transcode_ac3=0&preferred_audio_language=eng
